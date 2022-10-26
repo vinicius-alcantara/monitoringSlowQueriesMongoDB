@@ -72,18 +72,18 @@ then
      
      #### Count lines in Last Log File ####
      QTD_LINES_LAST_FILE_LOG=$("$WC_COMMAND" -l "$LAST_SLOW_QUERIES_FILE_LOG" | cut -d " " -f1);     
-     echo "$QTD_LINES_LAST_FILE_LOG";    
+     #echo "$QTD_LINES_LAST_FILE_LOG";    
  
      #### Generate Current File Raw and Log####
      generateCurrentSlowQueriesFile;
      formatCurrentSlowQueriesFile;
 
      #### Test Alterar Hash no Current File Log ####
-     echo "new text" >> "$CURRENT_SLOW_QUERIES_FILE_LOG";
+     #echo "new text" >> "$CURRENT_SLOW_QUERIES_FILE_LOG";
       
      #### Count lines in Current Log File ####
      QTD_LINES_CURRENT_FILE_LOG=$("$WC_COMMAND" -l "$CURRENT_SLOW_QUERIES_FILE_LOG" | cut -d " " -f1);
-     echo "$QTD_LINES_CURRENT_FILE_LOG";
+     #echo "$QTD_LINES_CURRENT_FILE_LOG";
 
      if [ "$QTD_LINES_LAST_FILE_LOG" == "$QTD_LINES_CURRENT_FILE_LOG" ];
      then
