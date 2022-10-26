@@ -15,10 +15,10 @@ cd "$WORK_DIR_SCRIPT_MAIL";
 CURRENT_LOCAL="$(pwd)";
 SMTP_SRV="smtp.office365.com";
 SMTP_PORT="587";
-SMTP_USR="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-SMTP_PASS="$(echo -ne 'NGcxbDF0eUBST09UIUAjMjAyMQo=' | base64 -d)";
-MAIL_FROM="$(echo -ne 'YXNzaXN0ZWMubm9jQHNybWFzc2V0LmNvbS5icgo=' | base64 -d)";
-MAIL_TO="$(echo -ne "dmluaWNpdXMuYWxjYW50YXJhQHNvbW9zYWdpbGl0eS5jb20uYnIK" | base64 -d)";
+SMTP_USR="$(echo -ne '<xxxxxxxxxxxxxxxxxxxxxxxxx>' | base64 -d)";
+SMTP_PASS="$(echo -ne '<yyyyyyyyyyyyyyyyyyyyyyyy>' | base64 -d)";
+MAIL_FROM="$(echo -ne '<xxxxxxxxxxxxxxxxxxxxxxxx>' | base64 -d)";
+MAIL_TO="$(echo -ne "<zzzzzzzzzzzzzzzzzzzzzzzzzz>" | base64 -d)";
 SUBJECT="REPORT: "$DATABASE_NAME_UPPERCASE" - SLOW QUERIES MONGODB ("$IP_MONGODB_VM")";
 ######################
 
