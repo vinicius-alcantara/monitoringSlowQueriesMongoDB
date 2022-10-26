@@ -1,0 +1,220 @@
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2296
+"responseLength": 235
+"millis": 800
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 26.506Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2297
+"responseLength": 235
+"millis": 848
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 26.627Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2287
+"responseLength": 235
+"millis": 584
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 28.093Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2285
+"responseLength": 235
+"millis": 594
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 28.223Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2288
+"responseLength": 235
+"millis": 743
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 29.838Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2289
+"responseLength": 235
+"millis": 770
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 29.995Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2292
+"responseLength": 235
+"millis": 848
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 31.688Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2291
+"responseLength": 235
+"millis": 883
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 31.882Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2288
+"responseLength": 235
+"millis": 615
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 33.305Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2291
+"responseLength": 235
+"millis": 610
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 33.494Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2286
+"responseLength": 235
+"millis": 573
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 34.880Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2292
+"responseLength": 235
+"millis": 612
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 35.113Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.emprestimo_parcelas_vencidas_geradas"
+"docsExamined": 11861
+"numYield": 92
+"responseLength": 1839041
+"millis": 139
+"planSummary": "COLLSCAN"
+"docsExamined": 11861
+"ts": ISODate("2022-10-26T03: 12: 35.360Z")
+"client": "10.50.6.171"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2284
+"responseLength": 235
+"millis": 592
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 36.473Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2285
+"responseLength": 235
+"millis": 589
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 36.705Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2281
+"responseLength": 235
+"millis": 582
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 38.058Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2282
+"responseLength": 235
+"millis": 587
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 38.294Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2290
+"responseLength": 235
+"millis": 748
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 39.808Z")
+"client": "10.50.4.127"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2289
+"responseLength": 235
+"millis": 813
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 40.109Z")
+"client": "10.50.4.94"
+#################################################################
+"op": "query"
+"ns": "nova_srm.notificacao_evento_processar"
+"docsExamined": 291130
+"numYield": 2283
+"responseLength": 235
+"millis": 691
+"planSummary": "IXSCAN{_id: 1}"
+"docsExamined": 291130
+"ts": ISODate("2022-10-26T03: 12: 41.501Z")
+"client": "10.50.4.127"
+#################################################################

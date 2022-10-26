@@ -1,0 +1,3664 @@
+MongoDB shell version: 2.6.10
+connecting to: 10.50.6.131/nova_srm
+{
+	"was" : 1,
+	"slowms" : 100,
+	"sampleRate" : 1,
+	"ok" : 1,
+	"operationTime" : Timestamp(1666754233, 2),
+	"$clusterTime" : {
+		"clusterTime" : Timestamp(1666754233, 2),
+		"signature" : {
+			"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+			"keyId" : NumberLong(0)
+		}
+	}
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753945, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2296,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4594)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2297)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2297)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 800,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 780,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2296,
+		"restoreState" : 2296,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 737,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2296,
+			"restoreState" : 2296,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 117,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2296,
+				"restoreState" : 2296,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:26.506Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753944, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2297,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4596)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2298)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2298)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 848,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 830,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2297,
+		"restoreState" : 2297,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 802,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2297,
+			"restoreState" : 2297,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 304,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2297,
+				"restoreState" : 2297,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:26.627Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753945, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2287,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4576)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2288)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2288)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 584,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 573,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2287,
+		"restoreState" : 2287,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 563,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2287,
+			"restoreState" : 2287,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 96,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2287,
+				"restoreState" : 2287,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:28.093Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753945, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2285,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4572)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2286)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2286)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 594,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 557,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2285,
+		"restoreState" : 2285,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 525,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2285,
+			"restoreState" : 2285,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 148,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2285,
+				"restoreState" : 2285,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:28.223Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753947, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2288,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4578)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2289)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2289)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 743,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 724,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2288,
+		"restoreState" : 2288,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 724,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2288,
+			"restoreState" : 2288,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 215,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2288,
+				"restoreState" : 2288,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:29.838Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753947, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2289,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4580)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2290)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2290)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 770,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 762,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2289,
+		"restoreState" : 2289,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 724,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2289,
+			"restoreState" : 2289,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 252,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2289,
+				"restoreState" : 2289,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:29.995Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753949, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2292,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4586)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2293)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2293)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 848,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 833,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2292,
+		"restoreState" : 2292,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 820,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2292,
+			"restoreState" : 2292,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 315,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2292,
+				"restoreState" : 2292,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:31.688Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753950, 379),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2291,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4584)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2292)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2292)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 883,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 802,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2291,
+		"restoreState" : 2291,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 802,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2291,
+			"restoreState" : 2291,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 182,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2291,
+				"restoreState" : 2291,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:31.882Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753951, 78),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2288,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4578)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2289)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2289)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 615,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 603,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2288,
+		"restoreState" : 2288,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 593,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2288,
+			"restoreState" : 2288,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 49,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2288,
+				"restoreState" : 2288,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:33.305Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753951, 160),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2291,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4584)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2292)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2292)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 610,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 598,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2291,
+		"restoreState" : 2291,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 569,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2291,
+			"restoreState" : 2291,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 107,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2291,
+				"restoreState" : 2291,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:33.494Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753953, 28),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2286,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4574)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2287)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2287)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 573,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 572,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2286,
+		"restoreState" : 2286,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 559,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2286,
+			"restoreState" : 2286,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 185,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2286,
+				"restoreState" : 2286,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:34.880Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753954, 35),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2292,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4586)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2293)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2293)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 612,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 563,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2292,
+		"restoreState" : 2292,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 563,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2292,
+			"restoreState" : 2292,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 125,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2292,
+				"restoreState" : 2292,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:35.113Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.emprestimo_parcelas_vencidas_geradas",
+	"command" : {
+		"find" : "emprestimo_parcelas_vencidas_geradas",
+		"filter" : {
+			"$and" : [
+				{
+					"$or" : [
+						{
+							"identificador" : "00106386000110"
+						},
+						{
+							"identificador" : "00408307000126"
+						},
+						{
+							"identificador" : "00641416000199"
+						},
+						{
+							"identificador" : "01210847000163"
+						},
+						{
+							"identificador" : "01702122000192"
+						},
+						{
+							"identificador" : "01784833000153"
+						},
+						{
+							"identificador" : "01932232000140"
+						},
+						{
+							"identificador" : "02067810000190"
+						},
+						{
+							"identificador" : "02094822000104"
+						},
+						{
+							"identificador" : "02527410000110"
+						},
+						{
+							"identificador" : "02886675000105"
+						},
+						{
+							"identificador" : "02961250000113"
+						},
+						{
+							"identificador" : "03011370000112"
+						},
+						{
+							"identificador" : "03213102000183"
+						},
+						{
+							"identificador" : "03273282000199"
+						},
+						{
+							"identificador" : "03378660000107"
+						},
+						{
+							"identificador" : "03667959000173"
+						},
+						{
+							"identificador" : "03816156000133"
+						},
+						{
+							"identificador" : "03970775000188"
+						},
+						{
+							"identificador" : "03986887000127"
+						},
+						{
+							"identificador" : "04173295000159"
+						},
+						{
+							"identificador" : "04214932000198"
+						},
+						{
+							"identificador" : "04348824000108"
+						},
+						{
+							"identificador" : "04515053000104"
+						},
+						{
+							"identificador" : "04536065000107"
+						},
+						{
+							"identificador" : "04647465000190"
+						},
+						{
+							"identificador" : "05005050000185"
+						},
+						{
+							"identificador" : "05222234000105"
+						},
+						{
+							"identificador" : "05274718000190"
+						},
+						{
+							"identificador" : "05358358000104"
+						},
+						{
+							"identificador" : "05429459000200"
+						},
+						{
+							"identificador" : "05684161000165"
+						},
+						{
+							"identificador" : "05825478000174"
+						},
+						{
+							"identificador" : "05934003000116"
+						},
+						{
+							"identificador" : "06038171000196"
+						},
+						{
+							"identificador" : "06286883000124"
+						},
+						{
+							"identificador" : "06814014000125"
+						},
+						{
+							"identificador" : "07157166000165"
+						},
+						{
+							"identificador" : "07206989000303"
+						},
+						{
+							"identificador" : "07230971000177"
+						},
+						{
+							"identificador" : "07590512000102"
+						},
+						{
+							"identificador" : "07643436000148"
+						},
+						{
+							"identificador" : "07660698000382"
+						},
+						{
+							"identificador" : "07688606000100"
+						},
+						{
+							"identificador" : "07774907000157"
+						},
+						{
+							"identificador" : "07839122000115"
+						},
+						{
+							"identificador" : "07842185000120"
+						},
+						{
+							"identificador" : "07846739000168"
+						},
+						{
+							"identificador" : "07922916000148"
+						},
+						{
+							"identificador" : "08366596000150"
+						},
+						{
+							"identificador" : "08467385000103"
+						},
+						{
+							"identificador" : "08521124000124"
+						},
+						{
+							"identificador" : "08750328000137"
+						},
+						{
+							"identificador" : "09042066000119"
+						},
+						{
+							"identificador" : "09249869000149"
+						},
+						{
+							"identificador" : "09298037000112"
+						},
+						{
+							"identificador" : "09479630000165"
+						},
+						{
+							"identificador" : "10156658000140"
+						},
+						{
+							"identificador" : "10220625000112"
+						},
+						{
+							"identificador" : "10257938000145"
+						},
+						{
+							"identificador" : "10312105000210"
+						},
+						{
+							"identificador" : "10395748000194"
+						},
+						{
+							"identificador" : "10418324000106"
+						},
+						{
+							"identificador" : "10425948000142"
+						},
+						{
+							"identificador" : "10507906000150"
+						},
+						{
+							"identificador" : "10557937000116"
+						},
+						{
+							"identificador" : "10723794000175"
+						},
+						{
+							"identificador" : "11210052000109"
+						},
+						{
+							"identificador" : "11328730000132"
+						},
+						{
+							"identificador" : "11443373000153"
+						},
+						{
+							"identificador" : "11798856000170"
+						},
+						{
+							"identificador" : "12128613000198"
+						},
+						{
+							"identificador" : "12332456000138"
+						},
+						{
+							"identificador" : "12928635000132"
+						},
+						{
+							"identificador" : "13086100000124"
+						},
+						{
+							"identificador" : "13441108000161"
+						},
+						{
+							"identificador" : "14216418000145"
+						},
+						{
+							"identificador" : "14353423000108"
+						},
+						{
+							"identificador" : "14508582000126"
+						},
+						{
+							"identificador" : "14861044000110"
+						},
+						{
+							"identificador" : "15490116000123"
+						},
+						{
+							"identificador" : "16815931000188"
+						},
+						{
+							"identificador" : "16901717000144"
+						},
+						{
+							"identificador" : "16973000000108"
+						},
+						{
+							"identificador" : "17203119000164"
+						},
+						{
+							"identificador" : "17899778000187"
+						},
+						{
+							"identificador" : "18342254000153"
+						},
+						{
+							"identificador" : "18758971000160"
+						},
+						{
+							"identificador" : "19104140000138"
+						},
+						{
+							"identificador" : "19166917000199"
+						},
+						{
+							"identificador" : "19205846000196"
+						},
+						{
+							"identificador" : "19578382000163"
+						},
+						{
+							"identificador" : "20147518000160"
+						},
+						{
+							"identificador" : "20236073000194"
+						},
+						{
+							"identificador" : "20282397000169"
+						},
+						{
+							"identificador" : "20367959000177"
+						},
+						{
+							"identificador" : "20781334000157"
+						},
+						{
+							"identificador" : "21092138000138"
+						},
+						{
+							"identificador" : "21115756000156"
+						},
+						{
+							"identificador" : "21465927000177"
+						},
+						{
+							"identificador" : "21657811000130"
+						},
+						{
+							"identificador" : "21951343000101"
+						},
+						{
+							"identificador" : "22308261000106"
+						},
+						{
+							"identificador" : "22408582000182"
+						},
+						{
+							"identificador" : "22449429000101"
+						},
+						{
+							"identificador" : "23361449000180"
+						},
+						{
+							"identificador" : "23910974000108"
+						},
+						{
+							"identificador" : "24563262000122"
+						},
+						{
+							"identificador" : "24881601000119"
+						},
+						{
+							"identificador" : "25528441000191"
+						},
+						{
+							"identificador" : "26039571000123"
+						},
+						{
+							"identificador" : "26563919000187"
+						},
+						{
+							"identificador" : "27013273000127"
+						},
+						{
+							"identificador" : "27175975000107"
+						},
+						{
+							"identificador" : "28450918000151"
+						},
+						{
+							"identificador" : "28781227000130"
+						},
+						{
+							"identificador" : "32747487000167"
+						},
+						{
+							"identificador" : "38936787000170"
+						},
+						{
+							"identificador" : "44153245000124"
+						},
+						{
+							"identificador" : "45309366000185"
+						},
+						{
+							"identificador" : "46900072000196"
+						},
+						{
+							"identificador" : "47683388000136"
+						},
+						{
+							"identificador" : "49991367000103"
+						},
+						{
+							"identificador" : "53026472000180"
+						},
+						{
+							"identificador" : "53626214000134"
+						},
+						{
+							"identificador" : "53653242000140"
+						},
+						{
+							"identificador" : "58066275000108"
+						},
+						{
+							"identificador" : "61184891000178"
+						},
+						{
+							"identificador" : "62728993000170"
+						},
+						{
+							"identificador" : "65647182000132"
+						},
+						{
+							"identificador" : "68507110000188"
+						},
+						{
+							"identificador" : "72928146000102"
+						},
+						{
+							"identificador" : "73368243000150"
+						},
+						{
+							"identificador" : "75587915000144"
+						},
+						{
+							"identificador" : "77964963000130"
+						},
+						{
+							"identificador" : "78644424000186"
+						},
+						{
+							"identificador" : "81428187000120"
+						},
+						{
+							"identificador" : "82916172000174"
+						},
+						{
+							"identificador" : "82981812000120"
+						},
+						{
+							"identificador" : "85150613000168"
+						},
+						{
+							"identificador" : "86580594000172"
+						},
+						{
+							"identificador" : "87377305000103"
+						},
+						{
+							"identificador" : "89547269000104"
+						},
+						{
+							"identificador" : "92598853000195"
+						},
+						{
+							"identificador" : "92882950000105"
+						},
+						{
+							"identificador" : "97554284000108"
+						},
+						{
+							"identificador" : "97750681000147"
+						}
+					]
+				},
+				{
+					"data_processamento" : "20221026"
+				}
+			]
+		},
+		"limit" : 300,
+		"$readPreference" : {
+			"mode" : "secondaryPreferred"
+		},
+		"$db" : "nova_srm"
+	},
+	"cursorid" : 108486769112,
+	"keysExamined" : 0,
+	"docsExamined" : 11861,
+	"numYield" : 92,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(186)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(93)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(93)
+			}
+		}
+	},
+	"nreturned" : 101,
+	"responseLength" : 1839041,
+	"protocol" : "op_query",
+	"millis" : 139,
+	"planSummary" : "COLLSCAN",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 101,
+		"executionTimeMillisEstimate" : 140,
+		"works" : 11862,
+		"advanced" : 101,
+		"needTime" : 11761,
+		"needYield" : 0,
+		"saveState" : 93,
+		"restoreState" : 92,
+		"isEOF" : 0,
+		"invalidates" : 0,
+		"limitAmount" : 300,
+		"inputStage" : {
+			"stage" : "COLLSCAN",
+			"filter" : {
+				"$and" : [
+					{
+						"$or" : [
+							{
+								"identificador" : {
+									"$eq" : "21951343000101"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "20147518000160"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "20236073000194"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "20282397000169"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "20367959000177"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "20781334000157"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "21092138000138"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "21115756000156"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "21465927000177"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "21657811000130"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "19578382000163"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "22308261000106"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "22408582000182"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "22449429000101"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "23361449000180"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "23910974000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "24563262000122"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "24881601000119"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "25528441000191"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "16901717000144"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "13086100000124"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "13441108000161"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "14216418000145"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "14353423000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "14508582000126"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "14861044000110"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "15490116000123"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "16815931000188"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "26039571000123"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "16973000000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "17203119000164"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "17899778000187"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "18342254000153"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "18758971000160"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "19104140000138"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "19166917000199"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "19205846000196"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "82981812000120"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "65647182000132"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "68507110000188"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "72928146000102"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "73368243000150"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "75587915000144"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "77964963000130"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "78644424000186"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "81428187000120"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "82916172000174"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "62728993000170"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "85150613000168"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "86580594000172"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "87377305000103"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "89547269000104"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "92598853000195"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "92882950000105"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "97554284000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "97750681000147"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "45309366000185"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "26563919000187"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "27013273000127"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "27175975000107"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "28450918000151"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "28781227000130"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "32747487000167"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "38936787000170"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "44153245000124"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "12928635000132"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "46900072000196"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "47683388000136"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "49991367000103"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "53026472000180"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "53626214000134"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "53653242000140"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "58066275000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "61184891000178"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05274718000190"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03986887000127"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04173295000159"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04214932000198"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04348824000108"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04515053000104"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04536065000107"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "04647465000190"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05005050000185"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05222234000105"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03970775000188"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05358358000104"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05429459000200"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05684161000165"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05825478000174"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "05934003000116"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "06038171000196"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "06286883000124"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "06814014000125"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "02527410000110"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "00408307000126"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "00641416000199"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "01210847000163"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "01702122000192"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "01784833000153"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "01932232000140"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "02067810000190"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "02094822000104"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07157166000165"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "02886675000105"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "02961250000113"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03011370000112"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03213102000183"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03273282000199"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03378660000107"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03667959000173"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "03816156000133"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10507906000150"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "09479630000165"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10156658000140"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10220625000112"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10257938000145"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10312105000210"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10395748000194"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10418324000106"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10425948000142"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "09298037000112"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10557937000116"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "10723794000175"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "11210052000109"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "11328730000132"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "11443373000153"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "11798856000170"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "12128613000198"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "12332456000138"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07842185000120"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07206989000303"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07230971000177"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07590512000102"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07643436000148"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07660698000382"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07688606000100"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07774907000157"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07839122000115"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "00106386000110"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07846739000168"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "07922916000148"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "08366596000150"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "08467385000103"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "08521124000124"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "08750328000137"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "09042066000119"
+								}
+							},
+							{
+								"identificador" : {
+									"$eq" : "09249869000149"
+								}
+							}
+						]
+					},
+					{
+						"data_processamento" : {
+							"$eq" : "20221026"
+						}
+					}
+				]
+			},
+			"nReturned" : 101,
+			"executionTimeMillisEstimate" : 140,
+			"works" : 11862,
+			"advanced" : 101,
+			"needTime" : 11761,
+			"needYield" : 0,
+			"saveState" : 93,
+			"restoreState" : 92,
+			"isEOF" : 0,
+			"invalidates" : 0,
+			"direction" : "forward",
+			"docsExamined" : 11861
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:35.360Z"),
+	"client" : "10.50.6.171",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753955, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2284,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4570)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2285)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2285)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 592,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 574,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2284,
+		"restoreState" : 2284,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 574,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2284,
+			"restoreState" : 2284,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 170,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2284,
+				"restoreState" : 2284,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:36.473Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753954, 259),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2285,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4572)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2286)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2286)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 589,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 584,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2285,
+		"restoreState" : 2285,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 574,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2285,
+			"restoreState" : 2285,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 212,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2285,
+				"restoreState" : 2285,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:36.705Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753956, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2281,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4564)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2282)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2282)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 582,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 565,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2281,
+		"restoreState" : 2281,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 554,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2281,
+			"restoreState" : 2281,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 138,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2281,
+				"restoreState" : 2281,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:38.058Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753956, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2282,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4566)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2283)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2283)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 587,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 573,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2282,
+		"restoreState" : 2282,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 573,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2282,
+			"restoreState" : 2282,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 152,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2282,
+				"restoreState" : 2282,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:38.294Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753957, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2290,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4582)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2291)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2291)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 748,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 719,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2290,
+		"restoreState" : 2290,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 719,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2290,
+			"restoreState" : 2290,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 257,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2290,
+				"restoreState" : 2290,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:39.808Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753958, 1),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"VYn1mWxETl254U0f/E06Ag==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2289,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4580)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2290)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2290)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 813,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 809,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2289,
+		"restoreState" : 2289,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 809,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2289,
+			"restoreState" : 2289,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 175,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2289,
+				"restoreState" : 2289,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:40.109Z"),
+	"client" : "10.50.4.94",
+	"allUsers" : [ ],
+	"user" : ""
+}
+{
+	"op" : "query",
+	"ns" : "nova_srm.notificacao_evento_processar",
+	"command" : {
+		"find" : "notificacao_evento_processar",
+		"filter" : {
+			"statusProcessamento" : "PENDENTE"
+		},
+		"sort" : {
+			"_id" : -1
+		},
+		"limit" : 100,
+		"$db" : "nova_srm",
+		"$clusterTime" : {
+			"clusterTime" : Timestamp(1666753958, 2),
+			"signature" : {
+				"hash" : BinData(0,"AAAAAAAAAAAAAAAAAAAAAAAAAAA="),
+				"keyId" : NumberLong(0)
+			}
+		},
+		"lsid" : {
+			"id" : BinData(4,"Qt4kqKXWRWe+S0h4uOFUOg==")
+		}
+	},
+	"keysExamined" : 291130,
+	"docsExamined" : 291130,
+	"cursorExhausted" : true,
+	"numYield" : 2283,
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong(4568)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong(2284)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong(2284)
+			}
+		}
+	},
+	"nreturned" : 0,
+	"responseLength" : 235,
+	"protocol" : "op_msg",
+	"millis" : 691,
+	"planSummary" : "IXSCAN { _id: 1 }",
+	"execStats" : {
+		"stage" : "LIMIT",
+		"nReturned" : 0,
+		"executionTimeMillisEstimate" : 668,
+		"works" : 291131,
+		"advanced" : 0,
+		"needTime" : 291130,
+		"needYield" : 0,
+		"saveState" : 2283,
+		"restoreState" : 2283,
+		"isEOF" : 1,
+		"invalidates" : 0,
+		"limitAmount" : 100,
+		"inputStage" : {
+			"stage" : "FETCH",
+			"filter" : {
+				"statusProcessamento" : {
+					"$eq" : "PENDENTE"
+				}
+			},
+			"nReturned" : 0,
+			"executionTimeMillisEstimate" : 668,
+			"works" : 291131,
+			"advanced" : 0,
+			"needTime" : 291130,
+			"needYield" : 0,
+			"saveState" : 2283,
+			"restoreState" : 2283,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"docsExamined" : 291130,
+			"alreadyHasObj" : 0,
+			"inputStage" : {
+				"stage" : "IXSCAN",
+				"nReturned" : 291130,
+				"executionTimeMillisEstimate" : 178,
+				"works" : 291131,
+				"advanced" : 291130,
+				"needTime" : 0,
+				"needYield" : 0,
+				"saveState" : 2283,
+				"restoreState" : 2283,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"keyPattern" : {
+					"_id" : 1
+				},
+				"indexName" : "_id_",
+				"isMultiKey" : false,
+				"multiKeyPaths" : {
+					"_id" : [ ]
+				},
+				"isUnique" : true,
+				"isSparse" : false,
+				"isPartial" : false,
+				"indexVersion" : 2,
+				"direction" : "backward",
+				"indexBounds" : {
+					"_id" : [
+						"[MaxKey, MinKey]"
+					]
+				},
+				"keysExamined" : 291130,
+				"seeks" : 1,
+				"dupsTested" : 0,
+				"dupsDropped" : 0,
+				"seenInvalidated" : 0
+			}
+		}
+	},
+	"ts" : ISODate("2022-10-26T03:12:41.501Z"),
+	"client" : "10.50.4.127",
+	"allUsers" : [ ],
+	"user" : ""
+}
+Type "it" for more
+bye
