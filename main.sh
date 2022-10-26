@@ -2,7 +2,7 @@
 
 #### VARIABLES #####
 WC_COMMAND="$(which wc)";
-IP_MONGODB_VM="10.50.6.131";
+IP_MONGODB_VM="xx.yy.zz.ww";
 #USER_MONGODB="admin";
 #PASSWORD_MONGODB="";
 #PORT_MONGODB="27017";
